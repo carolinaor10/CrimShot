@@ -52,3 +52,27 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const comments = document.querySelectorAll('.comment');
+    let counter = 0;
+
+    function showNextComment() {
+        // Ocultar todos los comentarios
+        comments.forEach(comment => {
+            comment.classList.remove('active');
+        });
+
+        // Mostrar el siguiente comentario
+        comments[counter].classList.add('active');
+
+        // Incrementar el contador
+        counter = (counter + 1) % comments.length;
+    }
+
+    // Mostrar el primer comentario
+    showNextComment();
+
+    // Cambiar los comentarios automáticamente cada 3 segundos
+    setInterval(showNextComment, 5000);
+});

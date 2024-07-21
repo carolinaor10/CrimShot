@@ -3,7 +3,7 @@
 //Vincular los objetos del DOM
 
 const btnEnviar = document.getElementById('btn-submit');
-const tikTok = document.getElementById('tikTok');
+const instagram = document.getElementById('instagram');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const myCheck = document.getElementById('myCheck');
@@ -43,7 +43,7 @@ function validar_correo(){
 }
 
 function limpiar_campos(){
-    tikTok.value = " ";
+    instagram.value = " ";
     email.value = " ";
     message.value = " ";
     myCheck.value = " ";

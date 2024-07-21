@@ -602,7 +602,8 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 280px;
+  width: 2000px;
 }
 
 .img-thumbnail {
@@ -8095,6 +8096,10 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: #6c757d !important;
 }
+.text-contact{
+  --bs-text-opacity: 1;
+  color: #ffc800 !important;
+}
 
 .text-black-50 {
   --bs-text-opacity: 1;
@@ -10948,18 +10953,18 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
-  background: url("../assets/img/Dollars.mp4");
+  color: white;
+  background: url("../assets/img/background_video.mp4");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.5rem;
-  margin-bottom: 25px;
+  margin: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -10980,9 +10985,10 @@ header.masthead .masthead-heading {
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
+    color: white;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
@@ -11315,4 +11321,163 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.carousel {
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-align: center;
+}
+
+.comment.active {
+  opacity: 1;
+}
+
+.instagram-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px; 
+}
+
+.instagram-container {
+  width: 100%; 
+  max-width: 600px; 
+}
+
+.instagram-media {
+  width: 100%; 
+  max-width: 600px; 
+  min-width: 320px; 
+  min-height: 320px; 
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 150px;
+    width: 400px;
+  }
+  .instagram-container {
+    height: 100%; 
+    width: 400px;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .carousel {
+    height: 100px; 
+    width: 400px;
+  }
+  .instagram-container {
+    height: 100%; 
+    width: 400px;
+  }
+  
+}
+
+
+/* Estilos para el contenedor del video */
+.video-container {
+  text-align: center;
+}
+
+/* Estilos para el video */
+video {
+  width: 65%; 
+  display: block;
+  margin: 0 auto; 
+}
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#portfolio .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#portfolio .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#portfolio .portfolio-item {
+  margin: 10px; /* Puedes ajustar el margen según tu preferencia */
+  width: 100%;
+  max-width: 600px; /* Ajusta la anchura máxima según sea necesario */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolio .portfolio-item img {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  object-fit: cover;
+}
+
+#portfolio .portfolio-caption {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-camera{
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 7rem;
+}
+button, .btn, .btn-primary {
+  background-color: crimson; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  transition: background-color 0.3s ease; 
+}
+
+button:hover, .btn:hover, .btn-primary:hover {
+  background-color: darkred; 
+}
+
+.fa-circle {
+  color: crimson; 
 }
